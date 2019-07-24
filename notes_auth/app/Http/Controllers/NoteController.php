@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Note;
 
 class NoteController extends Controller{
 
@@ -16,7 +17,10 @@ class NoteController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        //
+        //return auth()->user();
+        $emailUser = auth()->user()->email;
+        $notes = Note::where('user', $emailUser)->paginate(5);
+        return view('notes.list', compact('notes'));
     }
 
     /**
@@ -25,7 +29,7 @@ class NoteController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        //
+        return view('notes.create');
     }
 
     /**
@@ -35,7 +39,13 @@ class NoteController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-        //
+        $note = new Note();
+        $note->name = $request->name;
+        $note->description = $request->description;
+        $note->user = auth()->user()->email;
+        $note->save();
+
+        return back()->with('message', 'Note added sucessfully!');
     }
 
     /**
