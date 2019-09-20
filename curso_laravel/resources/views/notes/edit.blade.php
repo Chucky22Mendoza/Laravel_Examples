@@ -43,7 +43,7 @@
 
                     <input type="text" name="name" placeholder="Name" value="{{ $note->name }}" class="form-control mb-2">
                     <input type="text" name="description" placeholder="Description" class="form-control mb-2" value="{{ $note->description }}">
-                    <button type="submit" class="btn btn-primary btn-block mt-4">Update note</button>
+                    <button type="submit" class="btn btn-dark btn-block mt-4">Update note</button>
                 </form>
             </div>
         </div>

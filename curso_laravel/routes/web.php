@@ -12,8 +12,6 @@ Route::put('/edit/{id}', 'PagesController@update')->name('notes.update');
 
 Route::delete('/delete/{id}', 'PagesController@delete')->name('notes.delete');
 
-Route::get('pictures', 'PagesController@pictures')->name('pictures');
-
 Route::get('blog', 'PagesController@blog')->name('blog');
 
 Route::get('about_us/{name?}', 'PagesController@about_us')->name('about_us');

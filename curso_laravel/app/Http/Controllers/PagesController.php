@@ -66,16 +66,12 @@ class PagesController extends Controller
         return back()->with('message', 'Note deleted successfully');
     }
 
-    public function pictures(){
-        return view('pictures');
-    }
-
     public function blog(){
         return view('blog');
     }
 
     public function about_us($name = null){
-        $team = ['Jesús Mendoza', 'Daniel Mendoza', 'Carlos Mendoza'];
+        $team = ['Jesús Mendoza', 'Carlos Mendoza', 'Daniel Mendoza'];
         return view('about_us', compact('team', 'name'));
     }
 }

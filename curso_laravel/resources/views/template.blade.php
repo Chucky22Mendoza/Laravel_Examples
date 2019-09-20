@@ -19,9 +19,6 @@
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('pictures')}}">Pictures</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="{{route('blog')}}">Blog</a>
                 </li>
                 <li class="nav-item">
