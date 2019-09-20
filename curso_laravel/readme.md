@@ -3,9 +3,13 @@
 ## Requerimientos
 
 1.- PHP >= 7.2.0
+
 2.- MySQL || PHPMyadmin
+
 3.- restore test_laravel.sql
+
 4.- Editor de texto
+
 5.- Uso de terminal de comandos
 
 ## Instalación
