@@ -12,7 +12,7 @@
                 </button>
             </div>
         @endif
-        <table class="table table-striped table-bordered table-hover">
+        <table class="table table-striped table-bordered table-hover bg-light">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
@@ -51,7 +51,7 @@
     <div class="col-md-4">
         <div class="container">
             <div class="card bg-secondary text-center">
-                <div class="card-header">
+                <div class="card-header bg-dark text-light">
                     <h3>New Note</h3>
                 </div>
                 <div class="card-body">

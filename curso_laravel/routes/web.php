@@ -15,3 +15,5 @@ Route::delete('/delete/{id}', 'PagesController@delete')->name('notes.delete');
 Route::get('blog', 'PagesController@blog')->name('blog');
 
 Route::get('about_us/{name?}', 'PagesController@about_us')->name('about_us');
+
+Route::get('portfolio', 'PagesController@portfolio')->name('portfolio');

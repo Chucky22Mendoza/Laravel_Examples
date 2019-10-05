@@ -70,6 +70,10 @@ class PagesController extends Controller
         return view('blog');
     }
 
+    public function portfolio(){
+        return view('portfolio');
+    }
+
     public function about_us($name = null){
         $team = ['Jesús Mendoza', 'Carlos Mendoza', 'Daniel Mendoza'];
         return view('about_us', compact('team', 'name'));
